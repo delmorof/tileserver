@@ -42,11 +42,6 @@
         ]
       }
     }
-  }/*,
-  "data": {
-    "osm2vectortiles": {
-      "mbtiles": "c_italy.mbtiles"
-    }
-  }*/
+  }
 }
 
