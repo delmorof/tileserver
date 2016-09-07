@@ -1,0 +1,9 @@
+version: '2'
+services:
+  tileserver:
+    build: ./tileserver-gl
+    restart: always
+    ports:
+     - "80:80"
+    volumes:
+     - ./data:/data
