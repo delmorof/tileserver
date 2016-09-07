@@ -1,0 +1,52 @@
+{
+  "options": {
+    "paths": {
+      "root": "/data",
+      "fonts": "glyphs",
+      "sprites": "sprites",
+      "styles": "styles",
+      "mbtiles": ""
+    }
+  },
+  "styles": {
+    "basic-v9": {
+      "style": "basic-v9.json",
+      "tilejson": {
+        "bounds": [
+          -180,
+          -85.05112877980659,
+          180,
+          85.0511287798066
+        ]
+      }
+    },
+	"bright-v9": {
+      "style": "bright-v9.json",
+      "tilejson": {
+        "bounds": [
+          -180,
+          -85.05112877980659,
+          180,
+          85.0511287798066
+        ]
+      }
+    },
+	"custom-bright-v9": {
+      "style": "custom-bright-v9.json",
+      "tilejson": {
+        "bounds": [
+          -180,
+          -85.05112877980659,
+          180,
+          85.0511287798066
+        ]
+      }
+    }
+  }/*,
+  "data": {
+    "osm2vectortiles": {
+      "mbtiles": "c_italy.mbtiles"
+    }
+  }*/
+}
+
