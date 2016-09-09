@@ -1,9 +1,42 @@
 version: '2'
 services:
-  tileserver:
-    build: ./tileserver-gl
+  nginx:
+    build: ./nginx
     restart: always
     ports:
      - "80:80"
+    depends_on:
+     - tileserver_1
+     - tileserver_2
+     - tileserver_3
+     - tileserver_4
+    volumes:
+     - ./cache:/cache
+  tileserver_1:
+    build: ./tileserver-gl
+    restart: always
+    ports:
+     - "80"
     volumes:
      - ./data:/data
+  tileserver_2:
+    build: ./tileserver-gl
+    restart: always
+    ports:
+     - "80"
+    volumes_from:
+     - tileserver_1
+  tileserver_3:
+    build: ./tileserver-gl
+    restart: always
+    ports:
+     - "80"
+    volumes:
+     - ./data:/data
+  tileserver_4:
+    build: ./tileserver-gl
+    restart: always
+    ports:
+     - "80"
+    volumes_from:
+     - tileserver_1
